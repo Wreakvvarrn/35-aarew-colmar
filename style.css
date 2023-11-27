@@ -258,7 +258,7 @@ footer p {
     color: #A8A9A9;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 480px) {
     .logo {display: none;
     }
     .navbar {
