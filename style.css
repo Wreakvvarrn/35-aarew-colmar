@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Cabin', sans-serif;
+    color: #4A4A4A;
   }
 
 /* html {
@@ -10,41 +11,41 @@
     width: 100%;
   } */
 
-  .navbar {
+.navbar {
     height: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .logo {
+.logo {
     margin-left: 24px;
     display: flex;
     gap: 3px;
     height: 32px;
   }
 
-  .logo-text {
+.logo-text {
     display: flex;
   }
 
-  .switchcolor {
+.switchcolor {
     color:#7e7e7e;
   }
 
-  .nav-list {
+.nav-list {
     list-style: none;
     display: flex;
     gap: 16px;
     margin-right: 24px;
   }
 
-  .nav-link {
+.nav-link {
     text-decoration: none;
     color:#7e7e7e;
   }
 
-  .hero {
+.hero {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -52,54 +53,218 @@
     padding: 32px 0px 32px 24px;
   }
 
-  .hero-left {
-    width: 60%;
+.hero-left {
+    flex: 60%;
   }
 
-  .hero-right {
+.hero-right {
     display: flex;
+    flex: 40%;
     flex-direction: column;
     gap: 16px;
   }
 
-  .start-button {
+.start-button {
     padding: 8px;
     color: whitesmoke;
     background-color: #7e7e7e;
   }
 
-  .information {
+.information {
     display: flex;
-    align-items: center;
     gap: 24px;
-    padding: 32px 0px 32px 24px;
+    padding: 16px 0px 32px 24px;
   }
 
-  .info-left {
-    width: 60%;
+.info-left {
+    flex: 60%;
+    padding-top: 16px;
   }
 
-  .info-left-text{
+.info-left-text{
     padding-top: 32px;
   }
 
-  .info-left-text h2 {
+.info-left-text h2 {
     padding-bottom: 24px;
   }
 
-  .info-right {
+.info-right {
     display: flex;
     flex-direction: column;
+    flex: 40%;
   }
 
-  .info-right-list {
+.info-right-list {
     display: flex;
-  }
-
-  .info-right-list-text {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    padding: 16px
+  }
+
+  .info-right-list:hover {
+    background: #D8D8D8;
   }
 
 
+.info-right-list-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.course {
+    background-color: #D8D8D8;
+}
+
+.course-head {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.course-bottom {
+    padding-left: 72px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.course-list {
+    background-color: #FFFFFF;
+    width: 30%;
+}
+
+.course-list:hover {
+    transition: transform 0.3s ease; 
+    transform: scale(1.2); 
+    background: whitesmoke;
+}
+
+.course-list img {
+    width: 100%;
+    height: auto;
+}
+
+.course-list h3 {
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.course-list h4 {
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    padding-left: 16px;
+}
+
+.course-list p {
+    padding-left: 16px;
+    padding-bottom: 24px;
+}
+
+/* .thesis {
+} */
+
+.thesis-head {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.thesis-bottom {
+    display: flex;
+    padding-bottom: 32px;
+}
+
+.thesis-bottom-left {
+    flex: 60%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+  }
+
+.thesis-bottom-left-text{
+    padding-top: 24px;
+  }
+
+  .thesis-bottom-left-text p {
+    padding-top: 8px;
+  }
+
+.thesis-bottom-right {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    padding-top: 16px;
+}
+
+.thesis-bottom-right-list {
+    display: flex;
+    align-items: center;
+    padding: 16px
+  }
+
+  .thesis-bottom-right-list:hover {
+    background: #D8D8D8;
+  }
+
+
+.thesis-bottom-right-list-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+
+footer {
+    border-top: 1px solid #EAECEC;
+    display: flex;
+}
+
+footer p {
+    color: #A8A9A9;
+    flex: 1;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+.termprivate {
+    display: flex;
+    gap: 10px;
+    padding-top: 16px;
+    padding-right: 10px;
+}
+
+.termprivate a {
+    color: #A8A9A9;
+}
+
+@media (max-width: 625px) {
+    .logo {visibility: hidden;
+    }
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .signin {content:url(/capstone_colmar_assets/images/ic-login.svg)
+    }
+    .campus {content:url(/capstone_colmar_assets/images/ic-logo.svg)
+    }
+    .companies {content:url(/capstone_colmar_assets/images/ic-online.svg)
+    }
+    .online {content:url(/capstone_colmar_assets/images/ic-on-campus.svg)
+    }
+        
+}
